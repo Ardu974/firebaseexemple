@@ -31,4 +31,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Se connecter" />
+
+    <TextView
+        android:id="@+id/TVResultat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 </LinearLayout>

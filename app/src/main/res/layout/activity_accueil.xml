@@ -14,4 +14,30 @@
         android:layout_height="wrap_content"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <Button
+        android:id="@+id/btverifmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verifier mail"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/btrefresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Actualiser" />
+
+    <Button
+        android:id="@+id/btDeconnecter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Deconnecter" />
+
+    <Button
+        android:id="@+id/btretourconnecter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Retour" />
+
 </LinearLayout>

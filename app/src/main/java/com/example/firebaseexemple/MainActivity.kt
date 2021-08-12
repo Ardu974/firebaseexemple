@@ -26,6 +26,8 @@ class MainActivity : AppCompatActivity() {
             startActivity(EnregistrementIntent)
         }
         auth = Firebase.auth
+        val user = auth.currentUser
+            TVResultat.text = user?.uid
         val emailEnregistrement = intent.getStringExtra("email_user")
 
         if (emailEnregistrement != null){

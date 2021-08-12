@@ -29,7 +29,7 @@ class EnregistrementActivity : AppCompatActivity() {
                 .addOnCompleteListener(this) { task ->
                     if (task.isSuccessful) {
                         val mainintent = Intent(this, MainActivity::class.java)
-                        mainintent.putExtra("email_user", email)
+                        //mainintent.putExtra("email_user", email)
                         startActivity(mainintent)
                     } else {
                         TVResultat.text = "Echec de connexion"

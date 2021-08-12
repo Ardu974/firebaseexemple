@@ -6,43 +6,36 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".MainActivity" >
+    tools:context=".EnregistrementActivity">
 
     <EditText
-        android:id="@+id/email"
+        android:id="@+id/Eemail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="email"
+        android:hint="Email"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        android:text="tartempion2@test.fr" />
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/Epassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="mot de passe"
+        android:hint="Mot de passe"
         android:inputType="textPassword"
         android:minHeight="48dp"
-        android:text="654321" />
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
-        android:id="@+id/btConnecter"
+        android:id="@+id/btInscrire"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Se connecter" />
-
-    <Button
-        android:id="@+id/btRegister"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#4CAF50"
-        android:text="S'inscrire" />
+        android:text="Button" />
 
     <TextView
-        android:id="@+id/TVResultat"
+        android:id="@+id/ETVResultat"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 </LinearLayout>

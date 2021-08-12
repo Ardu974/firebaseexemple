@@ -19,7 +19,18 @@ class MainActivity : AppCompatActivity() {
         val ETpassword = findViewById<EditText>(R.id.password)
         val btConnexion = findViewById<Button>(R.id.btConnecter)
         val TVResultat = findViewById<TextView>(R.id.TVResultat)
+        val btRegister = findViewById<Button>(R.id.btRegister)
+
+        btRegister.setOnClickListener {
+            val EnregistrementIntent = Intent(this,EnregistrementActivity::class.java)
+            startActivity(EnregistrementIntent)
+        }
         auth = Firebase.auth
+        val emailEnregistrement = intent.getStringExtra("email_user")
+
+        if (emailEnregistrement != null){
+            ETemail.setText(emailEnregistrement)
+        }
 
         btConnexion.setOnClickListener {
             val email = ETemail.text.toString()

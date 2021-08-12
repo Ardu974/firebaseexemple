@@ -15,7 +15,8 @@
         android:ems="10"
         android:hint="email"
         android:inputType="textPersonName"
-        android:minHeight="48dp" />
+        android:minHeight="48dp"
+        android:text="tartempion2@test.fr" />
 
     <EditText
         android:id="@+id/password"
@@ -24,7 +25,8 @@
         android:ems="10"
         android:hint="mot de passe"
         android:inputType="textPassword"
-        android:minHeight="48dp" />
+        android:minHeight="48dp"
+        android:text="654321" />
 
     <Button
         android:id="@+id/btConnecter"

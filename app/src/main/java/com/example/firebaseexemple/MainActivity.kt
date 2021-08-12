@@ -1,5 +1,6 @@
 package com.example.firebaseexemple
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -21,13 +22,15 @@ class MainActivity : AppCompatActivity() {
         auth = Firebase.auth
 
         btConnexion.setOnClickListener {
-            val email = ETemail.text
-            val password = ETpassword.text
+            val email = ETemail.text.toString()
+            val password = ETpassword.text.toString()
 
-            auth.signInWithEmailAndPassword(email.toString(), password.toString())
+            auth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this) { task ->
                     if (task.isSuccessful) {
-                        TVResultat.text = "Connexion réussie"
+                        val accueilintent = Intent(this,AccueilActivity::class.java)
+                        accueilintent.putExtra("email_user",email)
+                        startActivity(accueilintent)
                     } else {
                         TVResultat.text = "Echec de connexion"
                     }
